@@ -6,7 +6,7 @@
 /* CSS Grid*/
 .container{
     margin: auto;
-    max-width: 1140px;
+    max-width: 100%;
     padding: 0 1rem;
 }
 .container .row {
