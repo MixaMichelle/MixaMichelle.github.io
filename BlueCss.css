@@ -7,8 +7,20 @@ html{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.text{
+    color: #ffffff;
+    font-size: medium;
+}
+
+.textfocus{
+    color: #ffffff;
+    font-size: medium;
+    text-align: center;
+    font-size: 150%
+}
+
 #TitleArea{
-    padding: 2px;
+    padding: 0.5px;
     background-color: white;
 }
 
@@ -32,7 +44,22 @@ html{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-top:50px;
 
+}
+
+.focusedtext {
+    text-align: justify;
+    margin-left: 80%;
+    margin-right: -80%;
+    margin-top: 50px;
+}
+
+#focusedimage {
+    top: 150px;
+    width: 45%;
+    right: 210px;
+    position: absolute;
 }
 
 .navbar {    
@@ -44,7 +71,7 @@ html{
 }
 
 #nav{
-    width: 35%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -61,6 +88,10 @@ a:hover {
     background-color: #969696;
 }
 
+body.focused-bg {
+    background-image: url('focusedBackground.png');
+}
+
 body {
     line-height: 1.5;
     margin: 0;
@@ -71,26 +102,56 @@ body {
 }
 
 #homeImage{
-    width: 500px;
+    width: 450px;
     position: relative;
     top: 25%;
     left: 100px;
     border-radius: 5%;
     filter: drop-shadow(16px 16px 10px rgb(95, 95, 95));
+    margin-top: 20px;
+    margin-left: -100px;
 }
 
+
 .box{
-    border: solid 2px black;
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 5%;
     background-color: white;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
+    margin-right: 5%;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
 }
 
+.focusedbox {
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5%;
+    background-color: white;
+    padding: 30px;
+    margin-top: 100px;
+    display: block;
+    margin-right: 75%;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+}
+
+.popbox {
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5%;
+    background-color: white;
+    padding: 10px;
+    margin-top: 100px;
+    display: block;
+    margin-right: 5%;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+}
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0px; 
     width: 100%;
     color: #ffffff;
@@ -106,3 +167,6 @@ footer {
     right: 0px;
 }
 
+.focusimage {
+    size: 50%;
+}
