@@ -3,6 +3,18 @@
     box-sizing: border-box;
 }
 
+body {
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.contact-bg {
+    background-image: url('contactBackground.png');
+}
+
 html{
     font-family: 'Times New Roman', Times, serif;
 }
@@ -48,22 +60,24 @@ a:hover {
     background-color: #969696;
 }
 
-body {
-    line-height: 1.5;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
 .box{
-    border: solid 2px black;
-    border-radius: 5%;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 30px;
     background-color: white;
     padding: 10px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    width: 400px;
+    height: 350px;
+    margin-left: 90%;
+    width: 50%;
+    display: block;
+    margin-top: 10px;
 }
 
 .text{
     text-align: center;
+    color: #ffffff;
 }
 
 
